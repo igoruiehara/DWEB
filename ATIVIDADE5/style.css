@@ -1,0 +1,53 @@
+
+.quadrado {
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 420px */
+@media (max-width: 420px) {
+    .quadrado {
+    background-color: gray;}
+
+    #cor::after {
+    content: "Cinza";}
+}
+
+/*  421px até 768px */
+@media (min-width: 421px) and (max-width: 768px) {
+    .quadrado {
+    background-color: orange;}
+
+    #cor::after {
+    content: "Laranja";}
+}
+
+/* De 769px até 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .quadrado {
+    background-color: blue;}
+
+    #cor::after {
+    content: "Azul";}
+}
+
+/* De 1201px até 1920px */
+@media (min-width: 1201px) and (max-width: 1920px) {
+    .quadrado {
+    background-color: red;}
+
+    #cor::after {
+    content: "Vermelho";}
+}
+
+/* Acima de 1920px */
+@media (min-width: 1921px) {
+    .quadrado {
+        background-color: green;}
+    #cor::after {
+        content: "Verde"; }
+}

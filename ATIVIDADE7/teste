@@ -1,1 +1,46 @@
 
+alert("Olá! Digite <1> para pedra <2> para tesoura  <3> para papel.");
+alert(" 1 sera pedra (p) 2 sera tesoura (t) e 3 sera papel(pa)");
+let j1 = prompt("Escolha um numero");
+let j2 = Math.random();
+
+let escolha1, escolha2; // 1 é da pesoa e 2 é do computador
+
+if (j1 == 1)
+    escolha1 = 'p'; // p é pedra
+        else if (j1 == 2)
+            escolha1 = 't'; // t de tesoura
+                else if (j1 == 3)
+                    escolha1 = 'pa'; // pa d epapel
+                        else 
+                            alert("Opção inválida!");
+
+
+// se a escolha do computador for menor que um terço (0,33) sera pedra
+//se a escolha do computador for menor que dois terços (0,66) sera tesoura, 
+// se não é menor que 0,3 é menor que 0,6 se for maior é papel
+
+    if (j2 < 1/3) 
+        escolha2 = 'p'; // pedra 
+            else if (j2 < 2/3)
+                escolha2 = 't'; // tesoura
+                else 
+                    escolha2 = 'pa'; // papel
+
+    if (escolha1 == escolha2)
+        alert("Empate!");
+
+        else if 
+            (escolha1 == 'p' && escolha2 == 't') 
+            alert("Você ganhou!");
+                else if 
+                    (escolha1 == 't' && escolha2 == 'pa') 
+                        alert("Você ganhou!");
+                            else if 
+                                (escolha1 == 'pa' && escolha2 == 'p')
+                                    alert("Você ganhou!");
+                                        else 
+                                        alert("O computador ganhou!");
+
+    alert("Sua escolha: " + escolha1 + "\nEscolha do computador: " + escolha2);
+    
